@@ -3,7 +3,7 @@
 django-pack facilate the uses of bootstrap and other frontend lib using tags
 # Installing
 ``` 
-  git pip install git+https://github.com/medamines1/django-pack/
+  GIT: sudo pip install git+https://github.com/medamines1/django-pack/
 ```
 
 ## How to use
