@@ -41,7 +41,12 @@ existing  so far:
 ```
 if you like to add folder wich contient files you like access the same way just need to create file in ```../codes/```
 then run collectstatic and you can use from the tag
+if you want to avoid calling ```collectstatic``` just these lines 
+``` 
+  from django.core.management import call_command
 
+  call_command('collectstatic', verbosity=0, interactive=False)
+```
 ## License : MIT
 
 
