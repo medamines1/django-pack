@@ -23,7 +23,7 @@ urlpatterns = [
   ]
 tags.boot()
 ```
-the just use it template.html
+the just use it template.html and make sure to run collectstatic
 ```
 
 {% load ipack %}
@@ -39,7 +39,8 @@ existing  so far:
 	      'jq':'/jquery',
 		   'swe':'/sweetAlert'}
 ```
-
+if you like to add folder wich contient files you like access the same way just need to create file in ```../codes/```
+then run collectstatic and you can use from the tag
 
 ## License : MIT
 
