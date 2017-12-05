@@ -25,12 +25,13 @@ tags.boot()
 ```
 the just use it template.html and make sure to run collectstatic
 ```
+{% load staticfiles %}
 
 {% load ipack %}
 
 {% load %} 
 ```
-becarfull this will include all the .css and .js of the exisiting libs <br>
+becarfull this will include all the .css and .js of bootstrap (only) <br>
 when using ``` {% load %} ```
 make sure to specific package and third argument is the type of file (js,css)
 ```
@@ -38,6 +39,15 @@ existing  so far:
       {'bts':'/bootstrap',
 	      'jq':'/jquery',
 		   'swe':'/sweetAlert'}
+```
+example
+```
+{% load staticfiles %}
+
+{% load ipack %}
+
+{% load "bts" "css"%}
+
 ```
 if you like to add folder wich contient files you like access the same way just need to create file in ```../codes/```
 then run collectstatic and you can use from the tag
